@@ -1,0 +1,37 @@
+<html>
+<head>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<style>
+table, th, td {   border: 1px solid black;}
+</style>
+</head>
+   <body>
+   <div class=" d-flex justify-content-centerd-flex justify-content-center " style="margin-top:20%;">
+      <form action = " " method = "POST" 
+         enctype = "multipart/form-data">
+		 <h1 style="background-color:light-Blue;"> File parsing code for CIS 524 </h1>
+				</br>
+				</br>
+				</br>
+				</br>
+
+		 <div class="form-group">
+		 		
+    <label for="exampleFormControlFile1">Upload your file here.</label>
+    <input type="file" class="form-control-file" name="file">
+  </div>
+        <input type = "submit"  class="form-control">
+		
+      </form>
+	  <div class="">
+	  {% if data %}
+	   <div style="   border: 2px solid black;
+  border-radius: 8px;" >{{data}}</div>
+	   {% endif %}</div>
+	   </div>
+	   
+   </body>
+</html>
